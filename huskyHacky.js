@@ -7,7 +7,6 @@ Level 1 - 1000grams → star
 Level 2 - 2000grams etc.
  */
 const averagePlasticPerBottle = 20; //grams
-let bottles = 0;
 const levels = ["Beginner", "Droplet", "Puddle", "Apprentice", "Enjoyer", "Trainer", "Wizard", "Bender", "Virtuoso", "Turtle's Best Friend"];
 const levelThresholds = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024];
 
@@ -29,23 +28,3 @@ const levelThresholds = [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024];
 //Level 14 (A Turtle's Best Friend)
 //Level 11(What color is your water bottle?)
 //
-
-function increaseBottles() { //on click event
-    bottles++;
-}
-
-function calculatePlasticSaved() { //average plastic saved per amount of bottles
-    return bottles * averagePlasticPerBottle;
-}
-
-function returnLevel() {
-    if (bottles < 2) {
-        return "Turtle Killer";
-    }
-    for (let i = levels.length; i >= 0; i--) {
-        if (bottles <= levelThresholds[i]) {
-            return levels[i];
-        }
-    }
-    return levels[levelThresholds.length - 1];
-}
