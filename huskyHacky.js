@@ -56,7 +56,6 @@ class Person {
     }
 }
 
-
 const user1 = new Person("Tony", "1234");
 
 var logintrue = prompt("Login? (y/n)");
@@ -87,21 +86,3 @@ function login(username, password) {
 }
 
 login("Tony", "1234");
-//Level -1 (Turtle Kill;er)
-//Level 0 (Beginner)
-//Level 1 (Water Droplet)
-//Level 2 (Water Puddle)
-//Level 3 (Water Muncher)
-//Level 4 (Water Trainer)
-//Level 5 (Water )
-//Level 6 (Water )
-//Level 7 (Water )
-//Level 8 (Water )
-//Level 9 (Water Shark)
-//Level 10 (Water Wizard)
-//Level 11 (Aqua Philosopher)
-//Level 12 (Water Virtuoso)
-//Level 13 (Water Bender)
-//Level 14 (A Turtle's Best Friend)
-//Level 11(What color is your water bottle?)
-//
